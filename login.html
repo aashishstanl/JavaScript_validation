@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+    <div id ="dikha"></div>
+    <fieldset class = "logo">
+        <img  src="mpower-logo.svg" alt="image of logo" />
+        <h5 class= "sologon"> A hammer to your dream barrier </h5>
+    </fieldset>
+    <hr>
+    
+    <div >
+        <div id="display"> </div>  
+        <form name="form" onsubmit="return validate()" action = "Home.html" >
+              
+        <fieldset class="field">
+
+                <div class="logo">
+                    <img src="mpower-logo.svg" alt="image of logo" />
+                </div>
+                
+                <div>
+                    
+                    <table class="login_inputs">
+                       
+                        <tr>
+                            <br>
+                            <!-- username -->
+                          
+                            <td><input id="username" autocomplete = "off" type="text" placeholder="Email Id / Emp Id" /> </td><br>
+                            <p id="user_error">Please enter the email</p>
+                        </tr>
+                        <br>
+                       
+                        <tr>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                        </tr>
+
+                        <tr>
+                            <td></td>
+                        </tr>
+                        
+                        <tr class="pass">
+                            <!-- <td>Password</td> -->
+                           
+                            <td ><input id="password" autocomplete="off" type="Password" placeholder="Password" /></td>
+                            <p  id="pass_error">Please enter the password</p>
+
+                        </tr>
+                        
+                        <tr >
+                            <td> <h5> <a href="" class="forgot"><i> Forget Password? </i></a> </h5> </td>
+                        </tr>
+                        <small></small>
+                        
+                    </table>
+                    <br>
+                
+                    <div class="buttons">
+                            <button id="login_button" type="submit"> Login </button>
+                            <button id="signup_button" type="submit"> Sign Up</button>
+                            
+                    </div>
+                </div>
+                <div class="discription3">
+                    
+                    <p>Powered By:</p>
+                    <p>MPOWER financing</p>
+                    <p> <a class="LinkColor" href="https://www.mpowerfinancing.com/"> © 2022 Mpowerfinancing.com </a> </p>
+                    <p>
+                            <a class="LinkColor" href=""> About Us </a>   |
+                            <a class="LinkColor" href=""> Terms and Conditions </a> |
+                            <a class="LinkColor" href=""> Privacy Policy </a> </p>
+                </div>
+            
+        </fieldset>
+    </form>
+    </div>
+    <script src="login.js"></script>
+</body>
+</html>
+

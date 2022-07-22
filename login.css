@@ -1,0 +1,105 @@
+body{
+    background-image: url(bg.jpg);
+    
+   
+    
+}
+input::placeholder {
+                 
+    text-align: center;
+}
+input {
+                
+    width: 40%;
+    height: 30px;
+    border-radius: 12px;
+    text-align: center;
+    
+}
+input{
+                
+    width: 50%;
+    height: 30px;
+    border-radius: 12px;
+    text-align: center;
+    background-color: black;
+    color: aliceblue;
+    
+}
+#pass_error,#user_error{
+    width: 15%;
+    height: 20px;
+    margin-left: 93px;
+    border-radius: 2px;
+    text-align: center;
+    background-color: rgba(255, 0,0, 0.1);
+    color: rgb(255, 76, 5);
+    position:absolute;
+    font-size: small;
+    display: none;
+    
+
+}
+#pass_error{
+    position: absolute;
+    margin-top: 107px;
+    
+}
+#user_error{
+    position:absolute;
+    margin-top: 57px;
+}
+.discription3,.buttons, .logo{
+   text-align : center;
+   
+}
+.sologon{
+    color: rgb(156, 209, 226);
+    margin: 0;
+    padding:0;
+    width: 106%;
+
+}
+hr{
+   background-color:hsl(53, 100%, 50%);
+   height : 3px;
+}
+
+.field {
+    margin-top: 2%;
+    margin-left: 35%;
+    /* background-color: rgb(54, 53, 53); */
+    width: 30%;
+    height: 75%;
+    text-align: absolute;
+    border-radius : 12px;
+    background-color: whitesmoke;
+    
+    
+    
+}
+.login_inputs {
+    width: 100%;
+    text-align : center;
+    
+    
+}
+.pass{
+
+    margin: 20px;
+    padding: 20px;
+    
+}
+.LinkColor {
+    color: black;
+}
+.forgot{
+    color:aliceblue;
+    margin: 0px;
+}
+#display{
+    background-color: black;
+    color: whitesmoke;
+    width: 50px;
+    height: 35px;
+}
