@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <!-- <link rel="stylesheet" href="LoginUsers.css"/> -->
+    <!-- <link rel="icon" type="image/x-icon" href="data:image/png;base64,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" /> -->
+    <title>TBO.com : Registration</title>
+    
+    <style type="text/css">
+        .auto-style1 {
+            height: 42px;
+        }
+        #fetch{
+            width: 200px;
+        }
+    </style>
+    
+</head>
+<body style="text-align: center;">
+    <form name="form" onsubmit="return validate()"  runat="server">
+      <fieldset>
+         <h1 class="Welcome"> Welcome To TBO </h1>
+      </fieldset>
+      <hr/>
+        <div>
+            <fieldset class="field">
+                <div class="logo">
+                    <!-- <img src="Logo.png" alt="image of logo" /> -->
+                </div>
+                       
+                <table>
+                        
+                    <tr>
+                        <td >FirstName</td>
+                        <td><input id="FName" type="text" onclick="return first()" placeholder="ex: John" />
+                            <div id ="first_error" style ="display:none;">Please enter the first name</div>
+                        </td>
+                        
+                    </tr>
+
+                    <tr>
+                        <td>LastName</td>
+                        <td><input id="LName" type="text" placeholder="ex: Marcos" />
+                             <div id ="last_error" style="display:none ;">Please enter the last name</div>
+                        </td>
+                       
+                    </tr>
+                    <tr>
+                        <td>Email Id</td>
+                        <td><input id="Email" type="email" placeholder="Email Id" />
+                            <div id ="email_error" style="display:none ;">Please enter the email</div>
+                        </td>
+                        
+                    </tr>
+                    <tr>
+                        <td>Phone Number</td>
+                        <td><input id="Phone" type="tel" />
+                            <div id ="phone_error" style="display:none ;">Please enter the phone</div>
+                        </td>
+                        
+                    </tr>                                                  
+                    <tr>
+                        <td>Address</td>
+                        <td><input id="Address" type="text" />
+                            <div id ="address_error" style="display:none ;">Please enter the Address</div>
+                        </td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>
+
+                            <p>Gender</p>
+                        </td>
+                        <td>
+                            <label> <input id = "gender1" type="radio" class="gender" value="Female" /> Female </label>
+
+                            <label> <input id ="gender2" type="radio" class="gender" value="Male" /> Male </label>
+
+                            <label> <input id ="gender3" type="radio" class="gender" value="Prefer not to say" /> Prefer not to say </label>
+                            <div id ="gender_error" style="display:none ;">gender is mandatory</div>
+                        </td>
+
+
+                    </tr>
+                    <tr>
+                        <td>Password</td>
+                        <td><input id="password" type="password" placeholder="Password" />
+                            <div id ="pass_error" style="display:none ;">Please enter the Password</div>
+                        </td>
+                        
+                    </tr>
+
+                    <tr>
+                        <td class="auto-style1">Re-Enter your Password</td>
+                        <td class="auto-style1"><input id="repass" type="password" placeholder="Password" />
+                            <div id ="repass_error" style="display:none ;">password does not matched</div>
+                        </td>
+                        
+                    </tr>
+
+                </table>
+
+                <button type="submit"  text="Submit" >Submit</button>
+                <input type="reset" value ="Reset" />
+                
+                <div class="Info">
+                    <p>Powered By:</p>
+                    <p>TravelBotiqueOnline</p>
+                    <p> <a class="LinkColor" href="https://www.tbo.com/"> © 2022 TravelBotiqueOnline.com </a> </p>
+                    <p>
+                        <a class="LinkColor" href="https://www.tbo.com/about-us"> About Us </a>   |
+                        <a class="LinkColor" href="https://www.tbo.com/terms-and-conditions"> Terms and Conditions </a> |
+                        <a class="LinkColor" href=" https://www.tbo.com/privacy-policy "> Privacy Policy </a>
+                    </p>
+                </div>
+        </fieldset>
+        </div>
+    </form>
+    
+
+    <div><br />
+    <fieldset >
+        <legend >
+            <h2> Data from local Storage</h2>
+        </legend>
+        <table border="2" id="table" >
+
+            <tr>
+                <td>First Name</td>
+                <td>Last Name</td>
+                <td>Gender</td>      
+                <td>Email</td>
+                <td>Phone_No</td>
+                <td>Address</td>
+            </tr>
+            
+            <tr>
+                <td ><br><span id="fn"></span></td>
+                <td ><br><span id="ln"></span></td>
+                <td ><br><span id="Gn"></span></td>   
+                <td ><br><span id="Em"></span></td>
+                <td ><br><span id="Ph"></span></td>        
+                <td><br><span id="address"></span></td>
+            </tr>
+            
+            
+            
+        </table>
+        <button onclick="return FetchData()" style="width: 200px;">Show data</button>
+    </fieldset> 
+    
+ </div> 
+    <script src ="test1.js"></script>
+</body>
+ 
+</html>
